@@ -16,7 +16,6 @@ public class SherlockAndArray {
             for(int i=0; i<s; i++){
                 ar[i]=in.nextInt(); 
             }
-            printArray(ar);
             int[] sumArray = new int[ar.length];
             for(int i=0; i<sumArray.length; i++){
                 if(i==0){
@@ -26,7 +25,6 @@ public class SherlockAndArray {
                     sumArray[i] = sumArray[i-1]+ar[i];
                 }
             }
-            printArray(sumArray);
             int flag = 0;
             int len = sumArray.length-1;
             for(int i=1; i<len-1; i++){
