@@ -38,8 +38,6 @@ public class MissingNumbers {
                 map2.put(key, currentCountForKey+1);
             }
         }
-//        printMap(map1);
-//        printMap(map2);
         int[] missingNumbers = finMissingNumbers(map1, map2);
         insertionSort(missingNumbers);
         printArray(missingNumbers);
